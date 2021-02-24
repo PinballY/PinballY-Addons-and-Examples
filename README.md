@@ -42,7 +42,7 @@ also view the [PinballY help online](http://mjrnet.org/pinscape/downloads/Pinbal
 
 The items in this repository are copyrighted by their respective
 authors.  Unless otherwise stated for a particular folder or script,
-everything is released under [MIT
+everything is released under the [MIT
 license](https://opensource.org/licenses/MIT).
 
 
