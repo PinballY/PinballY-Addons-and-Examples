@@ -26,7 +26,7 @@ To use one of the Javascript files you find here in PinballY:
 
 * Download the script's .js file(s) and place them in the **Scripts** folder within your main PinballY program folder
 * If you don't already have a file in your **Scripts** folder called **Main.js**, create one, using Notepad or any other plain-text editor you prefer
-* Open **Main.js** (from the *Scripts* folder) in Notepad or your preferred editor, and add a line like this: `import "xxx.js"` (replacing **xxx** with the actual name of the script file)
+* Open **Main.js** (from the **Scripts** folder) in Notepad or your preferred editor, and add a line like this: `import "xxx.js"` (replacing **xxx** with the actual name of the script file)
 
 If a particular add-on consists of multiple **.js** files, you might or
 might not have to add an `import` command for each one - it depends on
