@@ -9,8 +9,9 @@ Here you find two different example files.
 
 ```add_meta_filter_tableType.js``` adds:
 - only SolidState Tables
-- only pure mechanical tables
+- only Pure Mechanical tables
 - only Electromechanical tables
+
 **choose between meta_filter.js and meta_filter_tableType.js**
 
 You can melt both scripts togeter. This is realy simple. just read the code and you will understand.
