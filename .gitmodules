@@ -1,0 +1,3 @@
+[submodule "wheel-actions"]
+	path = wheel-actions
+	url = git@github.com:stephenhouser/PinballY-Wheel-Actions.git
