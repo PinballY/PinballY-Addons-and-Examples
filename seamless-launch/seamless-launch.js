@@ -12,6 +12,7 @@
 mainWindow.on("launchoverlayshow", ev => {
     mainWindow.showWheel(false);
     mainWindow.setUnderlay("");
+	mainWindow.launchOverlay.bg.clear(0x20FF00FF);
     ev.preventDefault();
 });
 
