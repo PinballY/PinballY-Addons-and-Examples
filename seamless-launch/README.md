@@ -12,3 +12,5 @@ To use this example:
 import 'seamless-launch.js'
 ```
 
+* Restart PinballY and enjoy.
+
