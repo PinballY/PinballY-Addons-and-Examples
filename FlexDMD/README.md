@@ -3,7 +3,7 @@
 
 #!! YOU NEED TO INSTALL FLEXDMD https://github.com/vbousquet/flexdmd#installation !!
 - This script was found at https://github.com/vbousquet/flexdmd
-- Manufactureranufacturer images / anmimations created by fr33styler (https://www.dietle.de/projekt-vpin-virtueller-flipper/)
+- Manufactureranufacturer images / anmimations created by fR33Styler (https://www.dietle.de/projekt-vpin-virtueller-flipper/)
 
 
 This script shows a manufacturer animated gif and some stats like highscore, total playtime, ... on your DMD screen.
