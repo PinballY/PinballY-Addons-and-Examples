@@ -1,7 +1,9 @@
 # command Example
 
-This is one of the simplest scripts - perfect for you to get in touch with java script & PinballY
-It simply adds "Table Setup" to the regular menu instead of the Operator Menu
+This is one of the simplest scripts - perfect for you to get in touch with java script & PinballY.
+
+It simply adds "Table Setup" to the regular menu instead of the Operator Menu.
+
 You can find many predefined commands here:
 http://mjrnet.org/pinscape/downloads/PinballY/Help/Commands.html
 
