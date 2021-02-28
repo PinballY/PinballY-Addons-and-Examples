@@ -7,7 +7,7 @@
 
 
 This script shows a manufacturer animated gif and some stats like highscore, total playtime, ... on your DMD screen.
-![Alien Pinball](https://github.com/PinballY/PinballY-Addons-and-Examples/blob/main/FlexDMD/dmds/manufacturers/Aliens%20vs%20Pinball.gif
+![Alien Pinball](https://github.com/PinballY/PinballY-Addons-and-Examples/blob/main/FlexDMD/dmds/manufacturers/Aliens%20vs%20Pinball.gif)
 ![Bethesa](https://github.com/PinballY/PinballY-Addons-and-Examples/blob/main/FlexDMD/dmds/manufacturers/Bethesda%20Pinball.gif)
 
 ## Installation ##
