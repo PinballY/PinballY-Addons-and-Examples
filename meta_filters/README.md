@@ -1,18 +1,23 @@
 # Meta_Filter
 
-Here you find 3 simple example Filters
+
+Here you find two different example files.
+```add_meta_filter.js``` adds:
 - only unrated games
 - only >3 stars
 - only >4 stars
 
-*<update 1.2>*
-there is another schript **meta_filter_tableType.js**
-This brings 3 other meta filters for table type (SS,EM,ME)
+```add_meta_filter_tableType.js``` adds:
+- only SolidState Tables
+- only Pure Mechanical tables
+- only Electromechanical tables
+
 **choose between meta_filter.js and meta_filter_tableType.js**
+
 You can melt both scripts togeter. This is realy simple. just read the code and you will understand.
 Just add ```import "meta_filter_tableType.js";``` to your *main.js*
-*</update>*
 
+##Description##
 Pinbally standard Filters do not stack. This means if you first select "Only Visual PinballX" as system
 and afterwards you select "3 Stars" as Filter --> You get ALL Tables (incl. FX3 and FP) with 3 stars.
 

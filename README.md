@@ -19,6 +19,17 @@ that there needn't be a hard line between the two, though.  Anything
 that's presented here as an add-on can also serve as starting point
 for something more or something different that you have in mind.
 
+## Index ##
+|script|description|difficulty of installation|
+|------|-----------|---------|
+|seamless-launch|overlay while table is loading|very easy|
+|two-tables-one-wheel|choose alternate version of same table|easy - read the docu|
+|start_random_table|starts a random table from the current GameWheel| very easy|
+|additional_filters|adds several filters to the "filter by rating" menu| easy | 
+|show_instruction_card|shows the instruction card window while playing a table| medium |
+|auto_shutdown|shuts down your PC after 60 min "Attract Mode" / inactivity| very easy|
+|menu_submenu_batch_file| example script how to create own menu items and how to start a batch file| medium|
+|meta_filter| adds additional MetaFilters to narrow existing selection to additional criterias|very easy|
 
 ## How to use Javascript in PinballY
 
