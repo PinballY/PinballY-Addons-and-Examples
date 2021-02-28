@@ -27,15 +27,11 @@ Initially created
    in the FLEXdmd.js file search for "comment this" and comment this line. Uncomment the next line  
    go to *DmdDevice.ini*  and add:
    adjust the values to your position of DMD
-	´´´[PinballY]
-	
+	```[PinballY]
 	virtualdmd left = 358
-	
 	virtualdmd top = -369
-	
 	virtualdmd width = 703
-	
-	virtualdmd height = 337   ´´´
+	virtualdmd height = 337   ```
 	
 
 
