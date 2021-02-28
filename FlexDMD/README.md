@@ -7,12 +7,12 @@
 
 
 This script shows a manufacturer animated gif and some stats like highscore, total playtime, ... on your DMD screen.
-
-![example video](https://github.com/PinballY/PinballY-Addons-and-Examples/blob/main/FlexDMD/example.mp4)
+![Alien Pinball](https://github.com/PinballY/PinballY-Addons-and-Examples/blob/main/FlexDMD/dmds/manufacturers/Aliens%20vs%20Pinball.gif
+![Bethesa](https://github.com/PinballY/PinballY-Addons-and-Examples/blob/main/FlexDMD/dmds/manufacturers/Bethesda%20Pinball.gif)
 
 ## Installation ##
-1. As usual copy the **FlexDMD.js** into your *PinballY/Scripts/* folder
-2. Add ```import "FlexDMD.js";``` to your **main.js**
+1. As usual copy the **flexdmd.js** into your *PinballY/Scripts/* folder
+2. Add ```import "flexdmd.js";``` to your **main.js**
 3. copy the dmd folder into your scripts folder
 4. restart PinballY
 
