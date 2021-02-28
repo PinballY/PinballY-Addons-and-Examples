@@ -1,31 +1,36 @@
-# menu_submenu_batch_file
+# FLEXdmd
 
 
-This is an example script as copy pattern.
-It creates a menu item.
-It creates a submenu with 4 items
-At the end it catches the commands and starts a batch file.
-
-You need to adjust the script to your requirements!
-In my case it triggers IObroker (smarthome) and sets the UnderCab Ambilight (WLED with ESP8266) to a preprogrammed effect.
+#!! YOU NEED TO INSTALL FLEXDMD https://github.com/vbousquet/flexdmd#installation !!
+- This script was found at https://github.com/vbousquet/flexdmd
+- Manufactureranufacturer images / anmimations created by fr33styler (https://www.dietle.de/projekt-vpin-virtueller-flipper/)
 
 
-![menu_submenu_batch_file](https://github.com/worksasdesigned/PinballY_scrips/blob/Master/menu_submenu_batch_file/menu_submenu_batch_file.png)
-![menu_submenu_batch_file2](https://github.com/worksasdesigned/PinballY_scrips/blob/Master/menu_submenu_batch_file/menu_submenu_batch_file2.png)
+This script shows a manufacturer animated gif and some stats like highscore, total playtime, ... on your DMD screen.
 
 
 ## Installation ##
-1. As usual copy the **menu_submenu_batch_file.js** into your *PinballY/Scripts/* folder
-2. Add ```import "menu_submenu_batch_file.js";``` to your **main.js**
-3. open **menu_submenu_batch_file.js** and adjust it for your needs
-4. open **my_batch.bat** and adjust it to your needs
-5. if you want to use [curl](https://curl.se/) it must be installed 
-6. restart PinballY
+1. As usual copy the **flexdmd.js** into your *PinballY/Scripts/* folder
+2. Add ```import "flexdmd.js";``` to your **main.js**
+3. copy the dmd folder into your scripts folder
+4. restart PinballY
 
 
 
 **Version 1.0**
 Initially created
+
+**Known Issues:**
+- Sometimes after finishing a table it does not restart. Now idea why.
+- DMD position is sometimes "off" a few pixel.
+   in the FLEXdmd.js file search for "comment this" and comment this line. Uncomment the next line  
+   go to DmdDevice.ini  and add:
+   adjust the values to your position of DMD
+	[PinballY]
+	virtualdmd left = 358
+	virtualdmd top = -369
+	virtualdmd width = 703
+	virtualdmd height = 337   
 
 
 
