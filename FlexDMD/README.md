@@ -7,6 +7,7 @@
 
 
 This script shows a manufacturer animated gif and some stats like highscore, total playtime, ... on your DMD screen.
+
 ![Alien Pinball](https://github.com/PinballY/PinballY-Addons-and-Examples/blob/main/FlexDMD/dmds/manufacturers/Aliens%20vs%20Pinball.gif)
 ![Bethesa](https://github.com/PinballY/PinballY-Addons-and-Examples/blob/main/FlexDMD/dmds/manufacturers/Bethesda%20Pinball.gif)
 
@@ -27,7 +28,8 @@ Initially created
    in the FLEXdmd.js file search for "comment this" and comment this line. Uncomment the next line  
    go to *DmdDevice.ini*  and add:
    adjust the values to your position of DMD
-	```[PinballY]
+	```
+	[PinballY]
 	virtualdmd left = 358
 	virtualdmd top = -369
 	virtualdmd width = 703
