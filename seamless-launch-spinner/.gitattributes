@@ -1,0 +1,4 @@
+Videos filter=lfs diff=lfs merge=lfs -text
+Videos/Loading-bubbles.mov filter=lfs diff=lfs merge=lfs -text
+Videos/Loading-yp.mov filter=lfs diff=lfs merge=lfs -text
+Videos/Loading.mov filter=lfs diff=lfs merge=lfs -text

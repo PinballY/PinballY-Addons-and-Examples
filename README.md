@@ -25,6 +25,7 @@ for something more or something different that you have in mind.
 |FLEXdmd|shows animated manufacturer images, stats, ...|easy|
 |command_example|How to add commands to the main menu (e.g. Table Setup)|very easy|
 |seamless-launch|overlay while table is loading|very easy|
+|seamless-launch-spinner|overlay while table is loading, with animation|very easy|
 |two-tables-one-wheel|choose alternate version of same table|easy - read the docu|
 |start_random_table|starts a random table from the current GameWheel| very easy|
 |additional_filters|adds several filters to the "filter by rating" menu| easy | 
