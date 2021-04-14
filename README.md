@@ -33,6 +33,7 @@ for something more or something different that you have in mind.
 |auto_shutdown|shuts down your PC after 60 min "Attract Mode" / inactivity| very easy|
 |menu_submenu_batch_file| example script how to create own menu items and how to start a batch file| medium|
 |meta_filter| adds additional MetaFilters to narrow existing selection to additional criterias|very easy|
+|sleep_computer| adds "Sleep Computer" to system menu to allow sleeping rather than power off|easy|
 
 **NOTE:** For the moment projects that are *linked* here are works-in-progress and may not be ready for general use. If you see one that looks like `wheel-actions @ 2cdb718` with the `@` symbol, that is a linked project. The projects that are directly included here, and listed above, are reasonably complete and are for general use.
 
