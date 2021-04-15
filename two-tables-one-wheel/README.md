@@ -59,11 +59,27 @@ In the earlier Medieval Madness example, my tables look like this:
 
 Note that last one. The name is identical to the default first one. There's a little trick in the code that if the name is the same, then it will include the system as the version. In this case, that last table is my Pinball FX3 version. This also means your alternate versions can cross systems. The remainder of these tables are Visual Pinball X.
 
-For each of your alternate tables you also need to assign them the category `isAlternateVersion`. You should do this using the PinballY user interface, under edit game, select categories. These are the normal PinballY categories. The category (or tag) serves two purposes:
+For each of your alternate tables you also need to assign them the category `Alternate Version`. You should do this using the PinballY user interface, under edit game, select categories. These are the normal PinballY categories. The category (or tag) serves two purposes:
 
 1. There is a *metafilter* added that hides/shows alternate version tables from the main menu. This can be enabled/disabled in the Operator Menu. If `Show Alternate Versions` is on, then all tables, including the alternate versions will appear on the wheel (use this mode to configure the alternate versions). If `Show Alternate Versions` is off then you will only see one wheel item for each of your default tables. The alternate versions will appear in the `Play` menu in both cases.
 
-2. The category is used to make sure we don't add the default table to the `Play` menu twice. The code only adds the tables with `isAlternateVersion` to the `Play` menu and leaves the default `Play` menu for the default table.
+2. The category is used to make sure we don't add the default table to the `Play` menu twice. The code only adds the tables with `Alternate Version` to the `Play` menu and leaves the default `Play` menu for the default table.
+
+## Configuration
+
+There are two `custom` configuration entries put into your `Settings.txt` file.
+
+**custom.AlternateVersionFilterMode**: which is either `1` to enable the filter or `0` to disable it. This setting is managed by the menu item, so it's best not to change it here.
+
+**custom.AlternateVersionCategory**: to change the PinballY category used to tag alternate versions. The default if this entry does not exist is `Alternate Version` as documented above. This text is also used for the `Show Alternate Versions` menu item.
+
+In earlier versions this was `isAlternateVersion`, but as one person pointed out, that looks rather ugly in the playlist selection interface. If you want to change the default, just put this key in your settings and give it a value.
+
+```
+custom.AlternateVersionCategory = Alternate Version
+```
+
+NOTE: That you will have to tag all your tables with a category of the exact same name for things to work correctly!
 
 ## Thoughts
 

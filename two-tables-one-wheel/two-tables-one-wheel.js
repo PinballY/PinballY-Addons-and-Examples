@@ -13,6 +13,8 @@
  */
 
 // On run load the last state of the alternate versions filter
+let alternateVersionCategoryKey = "custom.AlternateVersionCategory";
+let alternateVersionCategory = optionSettings.get(alternateVersionCategoryKey, "Alternate Version");
 let alternateVersionFilterKey = "custom.AlternateVersionFilterMode";
 let alternateVersionFilterOn = optionSettings.getBool(alternateVersionFilterKey);
 let alternateVersionFilterId; // Id of metafilter to show/hide alternate versions
@@ -20,24 +22,17 @@ let alternateVersionFilterCommand = command.allocate("AlternateVersionFilterTogg
 var alternateVersions = []; //  Holds current wheel items alternate versions
 var alternateVersionCommands = [];   // Holds allocated launch commands
 
-if (alternateVersionFilterOn) {
-    // if the saved setting is On, enable the filter immediately
-    enableAlternateVersionFilter();
+logfile.log('Alternate version category == [' + alternateVersionCategory + ']');
+
+export function showAlternateVersions() {
+    // NOTE: Removing a filter immediately puts it into effect
+    gameList.removeMetaFilter(alternateVersionFilterId);
+    alternateVersionFilterOn = false;
+    
+    optionSettings.set(alternateVersionFilterKey, alternateVersionFilterOn);
 }
 
-// is the given game an alternate version?
-// Does it have the alternate version category assigned to it.
-function isAlternateVersion(game) {
-    return game.categories.indexOf("isAlternateVersion") >= 0;
-}
-
-// is the giveo version an alternate for the give game?
-function isAlternateVersionForGame(alternate, game) {
-    // Check for title match and isAlternateVersion category
-    return alternate.title.startsWith(game.title) && isAlternateVersion(alternate);
-}
-
-function enableAlternateVersionFilter() {
+export function hideAlternateVersions() {
     // NOTE: Creating a filter immediately puts it into effect
     alternateVersionFilterId = gameList.createMetaFilter({
         priority: 1000,
@@ -45,11 +40,29 @@ function enableAlternateVersionFilter() {
             return !isAlternateVersion(game);
         }
     });
+
+    alternateVersionFilterOn = true;
+    optionSettings.set(alternateVersionFilterKey, alternateVersionFilterOn);
+}
+   
+// is the given game an alternate version?
+// Does it have the alternate version category assigned to it.
+function isAlternateVersion(game) {
+    return game.categories.indexOf(alternateVersionCategory) >= 0;
 }
 
-function disableAlternateVersionFilter() {
-    // NOTE: Removing a filter immediately puts it into effect
-    gameList.removeMetaFilter(alternateVersionFilterId);
+if (alternateVersionFilterOn) {
+    // if the saved setting is On, enable the filter immediately
+    showAlternateVersions();
+} else {
+    hideAlternateVersions();
+}
+
+// is the giveo version an alternate for the give game?
+function isAlternateVersionForGame(alternate, game) {
+    // Check for title match and isAlternateVersion category
+    // TODO: Use IPDB number instead?
+    return alternate.title.startsWith(game.title) && isAlternateVersion(alternate);
 }
 
 function allocateCommandIdsForAlternateVersions() {
@@ -121,7 +134,7 @@ mainWindow.on("menuopen", ev => {
         // Add show alternate versions to Operator Menu
         let showHiddenCommand = gameList.getFilterInfo("Hidden").cmd;
         ev.addMenuItem(showHiddenCommand, {
-            title: "Show Alternate Versions",
+            title: "Show " + alternateVersionCategory + "s",
             cmd: alternateVersionFilterCommand,
             checked: !alternateVersionFilterOn
         });
@@ -136,14 +149,12 @@ mainWindow.on("command", ev => {
         let game = alternateVersions[alternateVersionIndex];
 		mainWindow.playGame(game);
 		ev.preventDefault();
-    } else if (ev.id == alternateVersionFilterCommand) {
-        // Toggle the alternate version metafilter...
-        alternateVersionFilterOn = !alternateVersionFilterOn;
-        optionSettings.set(alternateVersionFilterKey, alternateVersionFilterOn);
+    } else if (ev.id == alternateVersionFilterCommand) {       
         if (alternateVersionFilterOn) {
-            enableAlternateVersionFilter();
+            // if the saved setting is On, enable the filter immediately
+            showAlternateVersions();
         } else {
-            disableAlternateVersionFilter();
+            hideAlternateVersions();
         }
     } 
 });
