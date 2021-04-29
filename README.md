@@ -22,6 +22,7 @@ for something more or something different that you have in mind.
 ## Index ##
 |script|description|difficulty of installation|
 |------|-----------|---------|
+|BatchCategoryTagging|Command to category-tag multiple games at once|easy|
 |FLEXdmd|shows animated manufacturer images, stats, ...|easy|
 |command_example|How to add commands to the main menu (e.g. Table Setup)|very easy|
 |seamless-launch|overlay while table is loading|very easy|
